@@ -70,11 +70,13 @@ h1{
     margin-top: 50px;
 }
 .storia img{
-    width:60%;
+    flex:40%;
+    width:65%;
     height: auto;
     margin-left: 100px;
 }
 .storia .testo{
+    flex:60%;
     margin-right: 100px;
 }
 .carousel-container {
