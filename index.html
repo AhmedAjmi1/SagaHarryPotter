@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!-- Dublin Core Metadata per descrivere la risorsa -->
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+        <meta name="DC.Title" content="La saga di Harry Potter"/>
+        <meta name="DC.Creator" content="Ahmed Ajmi"/>
+        <meta name="DC.Subject" content="Film di Harry Potter"/>
+        <meta name="DC.Description" content="Raccolta della saga di Harry Potter con relativi approfondimenti sui personaggi e sulle location iconiche dei film"/>
+        <meta name="DC.Publisher" content="Il Mondo di Harry Potter"/>
+        <meta name="DC.Date" content="2025-03-18"/>
+        <meta name="DC.Type" content="Web Page"/>
+        <meta name="DC.Format" content="Risorsa digitale"/>
+        <meta name="DC.Language" content="It"/>
+        <script src="script.js"></script>
+    </head>
+    
+    <body>
+        
+        <header>
+            <div class="immagineTestata">
+                <img src="immagini/cop3.jpg" alt="">
+            </div>
+            <div class="barraMenu">
+                <div class="logo">
+                    <img src="immagini/logo1.png" alt="">
+                </div>
+                <div class="menu">
+                    <nav>
+                        <a href="index.html">HOME</a>
+                        <a href="saga.html">SAGA</a>
+                        <a href="personaggi.html">PERSONAGGI</a>
+                        <a href="location.html">LOCATION ICONICHE</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="homepage">
+            <div>
+                <h1>Progetto</h1>
+                <p>Il mio sito ha l’obiettivo di fornire una panoramica introduttiva sull’universo di Harry Potter,<br> incuriosendo chi ancora non conosce questa saga e spingendolo a scoprirla. <br> Il contenuto principale sarà costituito da una presentazione chiara e coinvolgente dei film,<br> dei personaggi principali e delle location più iconiche. </p>
+            </div>
+            <div class="storia">
+                <div class="immagine">
+                    <img src="immagini/imm.jpg" alt="">
+                </div>
+                <div class="testo">
+                    <h1>Storia di Harry Potter</h1>
+                    <p>Harry Potter è una serie di romanzi fantasy scritta da <a href="">J. K. Rowling</a>, <br> incentrata sulle avventure del giovane mago Harry Potter e dei suoi migliori amici Ron Weasley <br>ed Hermione Granger, studenti della Scuola di Magia e Stregoneria di Hogwarts. <br>Il mondo magico nel quale è ambientata la saga consiste in una società parallela che vive celata al resto del mondo reale,<br> quello delle persone comuni, che vengono definite "babbani". L'arco narrativo segue principalmente lo scontro tra il protagonista e il mago oscuro Lord Voldemort,<br>desideroso di conquistare il mondo magico e l'immortalità.</p>
+                </div>
+            </div>
+            
+            <div class="carousel-container">
+                <h1>I FILM</h1>
+                <div class="carousel">
+                    <div class="slide">
+                        <div class="item"><img src="immagini/pietra.jpg" alt="Immagine 1"><p>Harry Potter e la pietra filosofale</p></div>
+                        <div class="item"><img src="immagini/camera.webp" alt="Immagine 2"><p>Harry Potter e la camera dei segreti</p></div>
+                        <div class="item"><img src="immagini/prigioniero.webp" alt="Immagine 3"><p>Harry Potter e il prigionero di Azkaban</p></div>
+                        <div class="item"><img src="immagini/calice.jpg" alt="Immagine 4"><p>Harry Potter e il calice di fuoco</p></div>
+                    </div>
+                    <div class="slide">
+                        <div class="item"><img src="immagini/fenice.jpg" alt="Immagine 5"><p>Harry Potter e l'Ordine della Fenice</p></div>
+                        <div class="item"><img src="immagini/mezzosangue.jpg" alt="Immagine 6"><p>Harry Potter e il principe mezzosangue</p></div>
+                        <div class="item"><img src="immagini/doni parte1.jpg" alt="Immagine 7"><p>Harry Potter e i Doni della Morte - Parte 1</p></div>
+                        <div class="item"><img src="immagini/doni part2.jpg" alt="Immagine 8"><p>Harry Potter e i Doni della Morte - Parte 2</p></div>
+                    </div>
+                </div>
+                <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
+                <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <a href="saga.html"><button class="saga-button">Vai alla Saga</button></a>
+              
+            <div class="personaggi-container">
+                <h1>IL TERZETTO</h1>
+                <div class="personaggiFilm">
+                
+                    <div class="fotoPersonaggi">
+                        <img src="immagini/hermione1.webp"  alt="">
+                        <p>Hermione Granger</p>
+                    </div>
+                    <div class="fotoPersonaggi">
+                        <img src="immagini/harry1.jpeg"  alt="">
+                        <p>Harry Potter</p>
+                    </div>
+                    <div class="fotoPersonaggi">
+                        <img src="immagini/ron1.jpg" alt="">
+                        <p>Ron Weasley</p>
+                    </div>
+                </div>
+                <a href="personaggi.html"><button class="saga-button">Vai ai personaggi</button></a>
+            </div>
+        
+        </main>
+
+        <footer>
+            <p>Seguici su</p>
+            <div class="social-icons">
+                <a href="#"><img src="immagini/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="immagini/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="immagini/tiktok.png" alt="TikTok"></a>
+            </div>
+            <div class="links">
+                <a href="WebProjectPlan.html">Web Project Plan</a> | 
+                <a href="#">Informazioni</a>
+            </div>
+            <p>🄯 2025 Saga di Harry Potter. Tutti i diritti riservati</p>
+        </footer>
+        <button id="scrollTopBtn" class="scroll-top-btn">Torna su</button>
+
+<script>
+    
+</script>
+    </body>
+    
+</html>

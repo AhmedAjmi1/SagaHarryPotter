@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mappa di Harry Potter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Dublin Core  -->
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+    <meta name="DC.Title" content="La saga di Harry Potter"/>
+    <meta name="DC.Creator" content="Ahmed Ajmi"/>
+    <meta name="DC.Subject" content="Film di Harry Potter"/>
+    <meta name="DC.Description" content="Raccolta della saga di Harry Potter con relativi approfondimenti sui personaggi e sulle location iconiche dei film"/>
+    <meta name="DC.Publisher" content="Il Mondo di Harry Potter"/>
+    <meta name="DC.Date" content="2025-03-18"/>
+    <meta name="DC.Type" content="Web Page"/>
+    <meta name="DC.Format" content="Risorsa digitale"/>
+    <meta name="DC.Language" content="It"/>
+</head>
+<style>
+    body{
+        background-color: lightgray;
+    }
+</style>
+<script src="script.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<body>
+    <header>
+        <div class="immagineTestata">
+            <img src="immagini/cop3.jpg" alt="">
+        </div>
+        <div class="barraMenu">
+            <div class="logo">
+                <img src="immagini/logo1.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="index.html">HOME</a>
+                    <a href="saga.html">SAGA</a>
+                    <a href="personaggi.html">PERSONAGGI</a>
+                    <a href="location.html">LOCATION ICONICHE</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="homepage1.html">Homepage</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                Location
+            </li>
+        </ol>
+     </nav>
+    <h1 style="font-weight: bold;">Luoghi Iconici di Harry Potter</h1>
+    <main>
+        <body>
+            <div class="containerLoc">
+                <div id="map"></div>
+                <div id="location-details" class="location"></div>
+            </div>
+        
+    </main> 
+    
+    <footer>
+        <p>Seguici su</p>
+        <div class="social-icons">
+            <a href="#"><img src="immagini/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="immagini/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="immagini/tiktok.png" alt="TikTok"></a>
+        </div>
+        <div class="links">
+            <a href="WebProjectPlan.html">Web Project Plan</a> | 
+            <a href="#">Informazioni</a>
+        </div>
+        <p>🄯 2025 Saga di Harry Potter. Tutti i diritti riservati.</p>
+    </footer>
+    <button id="scrollTopBtn" class="scroll-top-btn">Torna su</button>
+</body>
+</html>
+
